@@ -1,0 +1,34 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title_image {
+  padding: 0px 15px 0px 15px;
+  width: 200px;
+}
+
+.title_name {
+  font-size: 75px;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

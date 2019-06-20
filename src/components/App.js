@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { hot } from "react-hot-loader";
+import {hot} from "react-hot-loader";
 import { BrowserRouter } from 'react-router-dom';
-import "./styles/App.css";
+import "../styles/App.css";
 
-import Banner from './components/Banner'
-import Index from './components/index'
-import Profiles from './components/Profiles'
+import Banner from './Banner'
+import Index from './index'
+import Profiles from './Profiles'
 
 class App extends Component {
   constructor() {
@@ -45,9 +45,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="front">
-          <Banner showBanner={this.state.showBanner} showIndex={this.showIndex} showProfiles={this.showProfiles} />
-          <Index showIndex={this.state.showIndex} showBanner={this.showBanner} showProfiles={this.showProfiles} />
-          <Profiles showProfiles={this.state.showProfiles} showIndex={this.showIndex} showBanner={this.showBanner} />
+          <Banner showBanner={this.state.showBanner} showIndex={this.showIndex} showProfiles={this.showProfiles}/>
+          <Index showIndex={this.state.showIndex} showBanner={this.showBanner} showProfiles={this.showProfiles}/>
+          <Profiles showProfiles={this.state.showProfiles} showIndex={this.showIndex} showBanner={this.showBanner}/>
         </div>
       </BrowserRouter>
     )

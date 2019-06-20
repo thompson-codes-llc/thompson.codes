@@ -1,0 +1,42 @@
+.profiles {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+}
+
+.profile {
+  width: 50%;
+  background-size: cover;
+  border-top: 3px solid;
+}
+
+.profiles_container {
+  height: 100%;
+  width: 100%;
+}
+
+.traci {
+  background-image: url('../assets/traci.jpg');
+  border-right: 1.5px solid;
+}
+
+.bryan {
+  background-image: url('../assets/bryan.jpg');
+  border-left: 1.5px solid;
+}
+
+.profile_link {
+  display: block;
+  height: 100%;
+}
+
+.active_true {
+  background: blue;
+}
+
+active_false {
+  background: red;
+}
