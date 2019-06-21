@@ -11,7 +11,7 @@ class Profiles extends Component {
     this.state = {
       people: {
         Traci: "http://traci.thompson.codes",
-        Bryan: "http://www.snowboardtechie.com"
+        Bryan: "http://bryan.thompson.codes"
       },
     };
   }
