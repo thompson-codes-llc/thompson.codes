@@ -36,4 +36,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Deploying Production
 
-To update the production deployment of this server simply logon to the production server, `cd /var/www/thompson.codes`, then `git pull && npm run build` to deploy any new changes.
+To update the production deployment of this server simply logon to the production server and run `cd /var/www/thompson.codes && git pull && npm run build` to deploy any new changes.
