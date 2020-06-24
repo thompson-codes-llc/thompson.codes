@@ -25,10 +25,9 @@ class Banner extends Component {
     return (
       <div className="front">
         <div className="banner">
-          <h1 className="title_name first">THOMPSON</h1>
-            <img className="title_image" src={mountain} />
-          <h1 className="title_name second">CODES</h1>
+          <h1 className="title_name first">THOMPSON CODES</h1>
         </div>
+         <img className="title_image" src={mountain} />
         <div className="banner_footer">
           <button className="bottom_button" onClick={this.props.showProfiles}> {/* Adjust this to showIndex to bring back middle section*/}
             <img src={require('../assets/down-arrow.png')}></img>
