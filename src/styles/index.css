@@ -14,14 +14,15 @@ button {
 
 .top_button {
   transform:  rotate(180deg);
-  float: left;
+  float: right;
+  margin: 5% 47% 5% 30%;
 }
 
 .bottom_button {
-  float: right;
+  margin-right: 30%;
 }
 
-button img {
-  width: 20%;
+.bottom_button img, .top_button img {
+  width: 88.3px;
+  height: 88.3px;
 }
-
