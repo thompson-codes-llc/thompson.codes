@@ -21,7 +21,7 @@ export default class Banner extends Component {
     }
 
     return (
-      <div className="front">
+      <div className="banner-container">
         <div className="banner">
           <h1 className="title_name first">THOMPSON</h1>
             <a href="/">
