@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import { CustomLink } from './navItem';
+import NavLink from "./navLink";
 import '../styles/dropdown.css';
 
 
 const Dropdown = ({ items }) => {
   return (
     <div class="dropdown-container">
-      <CustomLink to={items.url}>{items.title}</CustomLink>
+      <NavLink to={items.url}>{items.title}</NavLink>
       <ul className="dropdown">
         {items.subnav.map((subnav, index) => (
           <li key={index} className="nav-items">
