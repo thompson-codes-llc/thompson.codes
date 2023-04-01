@@ -28,7 +28,7 @@ export const Layout = () => {
         </Button>
       </Card>
 
-      <Card sx={{height: "75%"}}>       
+      <Card sx={{height: "35%"}}>       
         <Box 
           sx={{
             bgcolor: 'white',
@@ -38,7 +38,7 @@ export const Layout = () => {
             width: "2000px", 
             height: "2000px", 
             position: "fixed",  
-            bottom: "5%",
+            bottom: "15%",
             right: "15%",
           }}
         />
@@ -48,8 +48,18 @@ export const Layout = () => {
           position: "absolute", 
           bottom: "50%", 
           right: "35%",
+          marginTop: "20px"
         }}>
           Thompson
+        </Button>
+        <Button variant="text" sx={{
+          color: "black", 
+          fontSize: "80px", 
+          position: "absolute", 
+          bottom: "4%", 
+          right: "40%",
+        }}>
+          Lives
         </Button>
       </Card> 
     </>
