@@ -22,7 +22,7 @@ export const Layout = () => {
             fontSize: "80px", 
             position: "fixed", 
             bottom: "40%", 
-            right: "8%",
+            right: "10%",
           }}>
           Codes
         </Button>
@@ -56,8 +56,8 @@ export const Layout = () => {
           color: "black", 
           fontSize: "80px", 
           position: "absolute", 
-          bottom: "4%", 
-          right: "40%",
+          bottom: "5%", 
+          right: "45%",
         }}>
           Lives
         </Button>
