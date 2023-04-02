@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Card, Typography } from '@mui/material';
+import { Menu } from './menu';
 
 export const Layout = () => {
   return (
@@ -17,7 +18,10 @@ export const Layout = () => {
           borderRadius: "0 20% 60% 0%",
           flex: 1.5,
           height: "125%",
-          margin: "-17% 0 0% 0%"
+          margin: "-17% 0 0% 0%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "baseline"
         }}
       >
         <Typography 
@@ -30,6 +34,7 @@ export const Layout = () => {
         >
           Thompson
         </Typography>
+        <Menu />
       </Box>
       <Box
         sx={{

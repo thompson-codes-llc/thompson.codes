@@ -9,11 +9,10 @@ import { Layout } from './components/layout';
 const App = () => {
   return (
     <>
-      <Layout />
       <Routes>
-        {/* <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   )
