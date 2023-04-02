@@ -1,61 +1,38 @@
 import React from 'react';
 import { Box, Card, Typography } from '@mui/material';
+import { Layout } from '../components/layout';
 
 const About = () => {
   return (
-    <Card
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        bgcolor: "black",
-        height: "100%",
-      }}
-    >  
-      <Box
+    <Layout 
+      left={
+        <Box
         sx={{
-          bgcolor: "white",
-          borderRadius: "0 20% 60% 0%",
-          flex: 1.5,
-          height: "125%",
-          margin: "-17% 0 0% 0%",
+          color: "black",
+          marginTop: "60%",
+          marginLeft: "20%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "baseline"
+          alignItems: "end"
         }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            color: "black",
-            marginTop: "50%",
-            marginLeft: "5%",
-            marginRight: "5%"
-          }}
         >
-          Thompson Codes is co-founded and run by programmer couple Traci and Bryan Thompson 
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          bgcolor: "black",
-          flex: 1,
-          height: "1000px",
-
-        }}
-      >
+          <Typography variant="h2">Thompson Codes is</Typography>
+          <Typography variant="h4">Bryan Thompson, Co-founder</Typography>
+          <Typography variant="h4">Traci Thompson, Co-founder</Typography>
+        </Box>
+      } 
+      right={
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{
             color: "white",
-            marginTop: "70%",
+            marginTop: "80%",
             marginLeft: "0%"
           }}
         >
-          more words and things 
+          We aim to provide quality web development services to small businesses in Central Oregon
         </Typography>
-      </Box>
-
-    </Card>
+      } />
   );
 }
 

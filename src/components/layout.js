@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { Box, Card, Typography } from '@mui/material';
-import { Menu } from './menu';
+import { Box, Card } from '@mui/material';
 
-export const Layout = () => {
+export const Layout = ({ left, right }) => {
   return (
     <Card
       sx={{
@@ -24,17 +23,7 @@ export const Layout = () => {
           alignItems: "baseline"
         }}
       >
-        <Typography 
-          variant='h1' 
-          sx={{
-            color: "black",
-            marginTop: "60%",
-            marginLeft: "40%"
-          }}
-        >
-          Thompson
-        </Typography>
-        <Menu />
+        {left}
       </Box>
       <Box
         sx={{
@@ -44,15 +33,7 @@ export const Layout = () => {
 
         }}
       >
-        <Typography 
-          variant='h1' 
-          sx={{
-            color: "white",
-            marginTop: "65%",
-          }}
-        >
-          Codes
-        </Typography>
+        {right}
       </Box>
     </Card>
   );

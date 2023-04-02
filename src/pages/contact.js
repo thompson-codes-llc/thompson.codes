@@ -1,28 +1,10 @@
 import React from 'react';
-import { Box, Card, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import { Layout } from '../components/layout';
 
 const Contact = () => {
   return (
-    <Card
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        bgcolor: "black",
-        height: "100%",
-      }}
-    >  
-      <Box
-        sx={{
-          bgcolor: "white",
-          borderRadius: "0 20% 60% 0%",
-          flex: 1.5,
-          height: "125%",
-          margin: "-17% 0 0% 0%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "baseline"
-        }}
-      >
+    <Layout left={
         <Typography
           variant="h3"
           sx={{
@@ -34,15 +16,7 @@ const Contact = () => {
         >
           How to reach us:
         </Typography>
-      </Box>
-      <Box
-        sx={{
-          bgcolor: "black",
-          flex: 1,
-          height: "1000px",
-
-        }}
-      >
+    } right={
         <Typography
           variant="h3"
           sx={{
@@ -52,10 +26,9 @@ const Contact = () => {
           }}
         >
           We can be reached via email at contact@thompson.codes 
-        </Typography>
-      </Box>
+        </Typography>}
+      />
 
-    </Card>
   );
 }
 
