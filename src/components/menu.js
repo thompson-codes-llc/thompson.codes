@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Link, MenuItem, MenuList } from "@mui/material";
 
 export const Menu = () => {
