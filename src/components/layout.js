@@ -1,5 +1,6 @@
-import * as React from 'react';
-import { Box, Card } from '@mui/material';
+import * as React from "react";
+import { Box, Card } from "@mui/material";
+import PropTypes from "prop-types";
 
 export const Layout = ({ left, right }) => {
   return (
@@ -20,7 +21,7 @@ export const Layout = ({ left, right }) => {
           margin: "-17% 0 0% 0%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "baseline"
+          alignItems: "baseline",
         }}
       >
         {left}
@@ -30,11 +31,15 @@ export const Layout = ({ left, right }) => {
           bgcolor: "black",
           flex: 1,
           height: "1000px",
-
         }}
       >
         {right}
       </Box>
     </Card>
   );
-}
+};
+
+Layout.propTypes = {
+  left: PropTypes.elementType,
+  right: PropTypes.elementType,
+};
