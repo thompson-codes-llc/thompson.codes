@@ -19,7 +19,7 @@
         "prettier"
     ],
     "rules": {
-        "eol-last": ww["error", "always"],
+        "eol-last": ["error", "always"],
         "prettier/prettier": ["error"]
     }
 }
