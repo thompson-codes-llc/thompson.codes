@@ -8,8 +8,8 @@ export const Menu = () => {
       sx={{
       }}
     >
-      <MenuItem component={Link} href="/about">About</MenuItem>
-      <MenuItem component={Link} href="/contact">Contact</MenuItem>
+      <MenuItem sx={{borderRadius: "40%"}}component={Link} href="/about">About</MenuItem>
+      <MenuItem sx={{borderRadius: "40%"}}component={Link} href="/contact">Contact</MenuItem>
     </MenuList>
   );
 }
