@@ -4,31 +4,29 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  height: 75%;
 }
 
-.title {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.title_image {
+.thompson_codes_logo {
   padding: 0px 15px 0px 15px;
-  width: 200px;
+  width: 6em;
 }
 
-.title_name {
-  font-size: 75px;
-}
-
-.front {
+.banner-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 20em;
+}
+
+.banner-container h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
 }

@@ -1,4 +1,10 @@
-.menu_bar {
+.navbar {
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
   height: 100%;
   color: white;
   text-align: center;
@@ -23,9 +29,13 @@
   background-color: #38668C;
 }
 
-.menu_bar.inactive {
+li.inactive {
   flex: 1 1 0;
 }
-.menu_bar.active {
+li.active {
   flex: 3 1 auto;
+}
+
+li.active a {
+  font-weight: bold;
 }
