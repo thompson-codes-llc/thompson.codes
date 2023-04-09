@@ -1,83 +1,94 @@
-// import { Layout } from "./layout";
-// import { Typography } from "@mui/material";
-// import { Menu } from "./menu";
+import { Box, Typography } from "@mui/material";
 
-// const leftHeader = () => {
-//   return (
-//     <>
-//       <Typography
-//         variant="h1"
-//         sx={{
-//           color: "black",
-//           marginTop: "60%",
-//           marginLeft: "40%",
-//         }}
-//       >
-//         Thompson
-//       </Typography>
-//       <Menu />
-//     </>
-//   );
-// };
-
-// const rightHeader = () => {
-//   return (
-//     <Typography
-//       variant="h1"
-//       sx={{
-//         color: "white",
-//         marginTop: "65%",
-//       }}
-//     >
-//       Codes
-//     </Typography>
-//   );
-// };
-// export const Home = () => {
-//   return <Layout left={leftHeader()} right={rightHeader()} />;
-// };
-
-import { Box } from "@mui/material";
-
-export const Home = () => {
-  return (
+export const Home = () => (
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      height: "100%",
+      backgroundColor: "black",
+      position: "relative",
+      overflow: "hidden",
+      padding: 0,
+      margin: 0,
+      maxWidth: "100%",
+    }}
+  >
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-        backgroundColor: "black",
+        backgroundColor: "white",
         position: "relative",
-        overflow: "hidden",
-        padding: 0,
-        margin: 0,
-        maxWidth: "100%",
+        display: "flex",
+        justifyContent: {
+          xs: "center",
+        },
+        flex: { xs: 1.5, sm: 2, md: 3 },
+        minHeight: { lg: "700px" },
+        minWidth: "750px",
+        width: {
+          xs: "775px",
+          sm: "1250px",
+          md: "1400px",
+          lg: "2000px",
+        },
+        marginLeft: {
+          xs: "-130px",
+          sm: "-155px",
+          md: "-175px",
+          lg: "-195px",
+        },
+        top: { xs: "-15%", sm: "-25%", md: "-25%", lg: "-32%" },
+        transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
       }}
     >
-      <Box
+      <Typography
+        variant="h1"
         sx={{
-          backgroundColor: "white",
-          flex: { xs: 2, sm: 2, md: 3 },
-          position: "relative",
-          width: {
-            xs: "750px",
-            sm: "1250px",
-            md: "1400px",
-            lg: "1500px",
-          },
-          textAlign: "center",
-          color: "white",
-          transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
+          transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
           marginLeft: {
-            xs: "-110px",
-            sm: "-125px",
-            md: "-150px",
+            xs: "20%",
           },
-          top: { xs: "-15%", sm: "-25%", lg: "-28%" },
-          minWidth: "750px",
+          marginRight: {
+            xs: "auto",
+          },
+          marginTop: {
+            xs: "50%",
+            sm: "35%",
+            lg: "20%",
+          },
+          fontSize: {
+            xs: "70px",
+            sm: "90px",
+          },
         }}
-      />
-      <Box sx={{ backgroundColor: "black", flex: 1 }} />
+      >
+        Thompson
+      </Typography>
     </Box>
-  );
-};
+
+    <Box
+      sx={{
+        backgroundColor: "black",
+        flex: 1,
+        display: "flex",
+        justifyContent: { xs: "center", sm: "end" },
+        minWidth: "750px",
+      }}
+    >
+      <Typography
+        variant="h1"
+        sx={{
+          color: "white",
+          marginTop: { xs: 0, sm: "-5%", md: "-15%" },
+          marginRight: { xs: "15%", sm: "20%", md: "10%" },
+          fontSize: {
+            xs: "70px",
+            sm: "90px",
+          },
+        }}
+      >
+        Codes
+      </Typography>
+    </Box>
+  </Box>
+);
