@@ -1,5 +1,6 @@
 import { Link, MenuItem, MenuList } from "@mui/material";
 
+// eslint-disable-next-line react/prop-types
 export const Menu = ({ setDisplay }) => {
   return (
     <MenuList open={true} sx={{}}>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Box, Button, Typography } from "@mui/material";
 import { Menu } from "./menu.js";
@@ -6,7 +6,13 @@ import { Menu } from "./menu.js";
 export const Home = () => {
   const [display, setDisplay] = useState("home");
 
-  console.log(display);
+  // useEffect(
+  //   (value) => {
+  //     setDisplay(value);
+  //   },
+  //   [display]
+  // );
+
   return (
     <Box
       sx={{
@@ -94,7 +100,7 @@ export const Home = () => {
               },
             }}
           >
-            <Button>X</Button>
+            <Button onClick={setDisplay("home")}>X</Button>
             <Typography variant="h2">Thompson Codes is</Typography>
             <Typography variant="h4">Bryan Thompson, Co-founder</Typography>
             <Typography variant="h4">Traci Thompson, Co-founder</Typography>
