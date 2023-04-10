@@ -1,4 +1,4 @@
-import { Link, MenuItem, MenuList, Typography } from "@mui/material";
+import { MenuItem, MenuList, Typography } from "@mui/material";
 import React from "react";
 
 export const Menu = ({ setDisplay }) => {
@@ -22,12 +22,14 @@ export const Menu = ({ setDisplay }) => {
       <MenuList open={true}>
         <MenuItem
           sx={{ borderRadius: "48%" }}
-          component={Link}
           onClick={() => setDisplay("about")}
         >
           About
         </MenuItem>
-        <MenuItem sx={{ borderRadius: "48%" }} component={Link} href="/contact">
+        <MenuItem
+          sx={{ borderRadius: "48%" }}
+          onClick={() => setDisplay("contact")}
+        >
           Contact
         </MenuItem>
       </MenuList>

@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Menu } from "./menu";
 import About from "../pages/about";
+import Contact from "../pages/contact";
 
 export const MenuContainer = () => {
   const [display, setDisplay] = useState("menu");
@@ -37,16 +38,18 @@ export const MenuContainer = () => {
         sx={{
           width: "100%",
           transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-          marginLeft: "20%",
+          marginLeft: "15%",
           marginTop: {
-            xs: "50%",
-            sm: "35%",
-            lg: "35%",
+            // xs: "50%",
+            // sm: "35%",
+            // lg: "40%",
+            lg: "30%",
           },
         }}
       >
         {display === "menu" && <Menu setDisplay={setDisplay} />}
         {display === "about" && <About />}
+        {display === "contact" && <Contact />}
       </Box>
     </Box>
   );
