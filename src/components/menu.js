@@ -1,19 +1,36 @@
-import { Link, MenuItem, MenuList } from "@mui/material";
+import { Link, MenuItem, MenuList, Typography } from "@mui/material";
+import React from "react";
 
-// eslint-disable-next-line react/prop-types
 export const Menu = ({ setDisplay }) => {
   return (
-    <MenuList open={true} sx={{}}>
-      <MenuItem
-        sx={{ borderRadius: "48%" }}
-        component={Link}
-        onClick={setDisplay("about")}
+    <>
+      <Typography
+        variant="h1"
+        sx={{
+          marginRight: {
+            xs: "auto",
+          },
+          fontSize: {
+            xs: "70px",
+            sm: "90px",
+          },
+        }}
       >
-        About
-      </MenuItem>
-      <MenuItem sx={{ borderRadius: "48%" }} component={Link} href="/contact">
-        Contact
-      </MenuItem>
-    </MenuList>
+        Thompson
+      </Typography>
+
+      <MenuList open={true}>
+        <MenuItem
+          sx={{ borderRadius: "48%" }}
+          component={Link}
+          onClick={() => setDisplay("about")}
+        >
+          About
+        </MenuItem>
+        <MenuItem sx={{ borderRadius: "48%" }} component={Link} href="/contact">
+          Contact
+        </MenuItem>
+      </MenuList>
+    </>
   );
 };

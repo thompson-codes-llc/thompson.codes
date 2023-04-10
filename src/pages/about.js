@@ -1,22 +1,19 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import React from "react";
 
 const About = () => {
   return (
     <>
-      <Typography variant="h2">Thompson Codes is</Typography>
-      <Typography variant="h4">Bryan Thompson, Co-founder</Typography>
-      <Typography variant="h4">Traci Thompson, Co-founder</Typography>
-      <Typography
-        variant="h4"
+      <Box
         sx={{
-          color: "white",
-          marginTop: "80%",
-          marginLeft: "0%",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        We aim to provide quality web development services to small businesses
-        in Central Oregon
-      </Typography>
+        <Typography variant="h2">Thompson Codes is</Typography>
+        <Typography variant="h4">Bryan Thompson, Co-founder</Typography>
+        <Typography variant="h4">Traci Thompson, Co-founder</Typography>
+      </Box>
     </>
   );
 };

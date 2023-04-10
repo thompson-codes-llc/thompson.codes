@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
-
-import { Box, Button, Typography } from "@mui/material";
-import { Menu } from "./menu.js";
+import { Box } from "@mui/material";
+import React from "react";
+import { MenuContainer } from "./menuContainer";
 
 export const Home = () => {
-  const [display, setDisplay] = useState("home");
-
-  // useEffect(
-  //   (value) => {
-  //     setDisplay(value);
-  //   },
-  //   [display]
-  // );
-
   return (
     <Box
+      id="layout-container"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -28,6 +19,7 @@ export const Home = () => {
       }}
     >
       <Box
+        id="top-container"
         sx={{
           backgroundColor: "white",
           position: "relative",
@@ -55,60 +47,11 @@ export const Home = () => {
           transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
         }}
       >
-        {display === "home" && (
-          <Box
-            sx={{
-              transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-              marginLeft: "20%",
-              marginTop: {
-                xs: "50%",
-                sm: "35%",
-                lg: "30%",
-              },
-            }}
-          >
-            <Typography
-              variant="h1"
-              sx={{
-                marginRight: {
-                  xs: "auto",
-                },
-                fontSize: {
-                  xs: "70px",
-                  sm: "90px",
-                },
-              }}
-            >
-              Thompson
-            </Typography>
-            <Menu
-              setDisplay={setDisplay}
-              sx={{
-                border: "1px solid red",
-                width: "100%",
-              }}
-            />
-          </Box>
-        )}
-        {display === "about" && (
-          <Box
-            sx={{
-              transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-              marginLeft: { lg: "10%" },
-              marginTop: {
-                lg: "25%",
-              },
-            }}
-          >
-            <Button onClick={setDisplay("home")}>X</Button>
-            <Typography variant="h2">Thompson Codes is</Typography>
-            <Typography variant="h4">Bryan Thompson, Co-founder</Typography>
-            <Typography variant="h4">Traci Thompson, Co-founder</Typography>
-          </Box>
-        )}
+        <MenuContainer />
       </Box>
 
       <Box
+        id="bottom-container"
         sx={{
           backgroundColor: "black",
           flex: 1,
@@ -118,7 +61,7 @@ export const Home = () => {
           width: "100%",
         }}
       >
-        {display === "home" && (
+        {/* {display === "home" && (
           <Typography
             variant="h1"
             sx={{
@@ -147,7 +90,7 @@ export const Home = () => {
             We aim to provide quality web development services to businesses in
             Central Oregon
           </Typography>
-        )}
+        )} */}
       </Box>
     </Box>
   );
