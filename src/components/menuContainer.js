@@ -24,7 +24,7 @@ export const MenuContainer = () => {
             position: "absolute",
             transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
             marginLeft: "75%",
-            marginBottom: "200px",
+            marginBottom: "150px",
             fontWeight: "400",
             fontSize: "40px",
             color: "black",
@@ -41,9 +41,8 @@ export const MenuContainer = () => {
           marginLeft: "15%",
           marginTop: {
             // xs: "50%",
-            // sm: "35%",
-            // lg: "40%",
-            lg: "30%",
+            sm: "35%",
+            lg: "40%",
           },
         }}
       >

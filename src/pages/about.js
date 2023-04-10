@@ -6,8 +6,11 @@ const About = () => {
     <>
       <Box
         sx={{
+          width: "40%",
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "start",
         }}
       >
         <Typography variant="h2">Thompson Codes is</Typography>
