@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { Menu } from "./menu.js";
 
 export const Home = () => (
   <Box
@@ -19,6 +20,7 @@ export const Home = () => (
         backgroundColor: "white",
         position: "relative",
         display: "flex",
+        flexDirection: "column",
         justifyContent: {
           xs: "center",
         },
@@ -41,29 +43,38 @@ export const Home = () => (
         transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
       }}
     >
-      <Typography
-        variant="h1"
+      <Box
         sx={{
           transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-          marginLeft: {
-            xs: "20%",
-          },
-          marginRight: {
-            xs: "auto",
-          },
+          marginLeft: "20%",
           marginTop: {
             xs: "50%",
             sm: "35%",
-            lg: "20%",
-          },
-          fontSize: {
-            xs: "70px",
-            sm: "90px",
+            lg: "30%",
           },
         }}
       >
-        Thompson
-      </Typography>
+        <Typography
+          variant="h1"
+          sx={{
+            marginRight: {
+              xs: "auto",
+            },
+            fontSize: {
+              xs: "70px",
+              sm: "90px",
+            },
+          }}
+        >
+          Thompson
+        </Typography>
+        <Menu
+          sx={{
+            border: "1px solid red",
+            width: "100%",
+          }}
+        />
+      </Box>
     </Box>
 
     <Box
