@@ -12,8 +12,9 @@ export const MenuContainer = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
-        alignItems: "start",
+        flexDirection: { xs: "column", sm: "row" },
+        height: "100%",
+        // alignItems: "start",
         justifyContent: "end",
       }}
     >
@@ -21,12 +22,12 @@ export const MenuContainer = () => {
         <Button
           onClick={() => setDisplay("menu")}
           sx={{
-            position: "absolute",
+            position: { xs: "relative", lg: "fixed" },
             transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-            marginLeft: "75%",
-            marginBottom: "150px",
             fontWeight: "400",
             fontSize: "40px",
+            marginTop: { xs: "20%", md: "35%", lg: "30%" },
+            marginRight: { lg: "25%" },
             color: "black",
           }}
         >
@@ -36,13 +37,14 @@ export const MenuContainer = () => {
       <Box
         id="top-content"
         sx={{
-          width: "100%",
+          minWidth: "30%",
+          width: { lg: "70%" },
           transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-          marginLeft: "15%",
+          marginLeft: { xs: "20%", sm: "15%", md: "20%", lg: "15%" },
           marginTop: {
-            // xs: "50%",
-            sm: "35%",
-            lg: "40%",
+            xs: "10%",
+            sm: "40%",
+            lg: "30%",
           },
         }}
       >

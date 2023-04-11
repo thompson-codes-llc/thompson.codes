@@ -6,7 +6,7 @@ const About = () => {
     <>
       <Box
         sx={{
-          width: "40%",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
