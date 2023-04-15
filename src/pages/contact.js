@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   List,
   ListItem,
   ListItemIcon,
@@ -13,7 +14,7 @@ import traci from "../assets/traci.jpeg";
 import bryan from "../assets/bryan.jpeg";
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ setDisplay }) => {
   return (
     <>
       <Box
@@ -22,31 +23,50 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "start",
+          alignItems: "center",
         }}
       >
+        <Button
+          onClick={() => setDisplay("menu")}
+          sx={{
+            position: { xs: "relative", lg: "fixed" },
+            fontWeight: "400",
+            fontSize: "40px",
+            color: "black",
+            alignSelf: "end",
+          }}
+        >
+          X
+        </Button>
         <Typography
           variant="h3"
           sx={{
             color: "black",
             alignSelf: "center",
-            marginLeft: "-25%",
+            // marginLeft: "-25%",
+            fontSize: { xs: "30px" },
           }}
         >
           Find Us
         </Typography>
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
+        <Box
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+        >
           <List
             sx={{
               display: "flex",
-              flexDirection: "column",
+              flexDirection: { xs: "row", md: "column" },
               alignItems: "center",
+              width: { xs: "100%", md: "25%" },
+              gap: { xs: "10px" },
             }}
           >
             <ListItem
-              sx={{
-                width: "50%",
-              }}
+              sx={
+                {
+                  // width: "100%",
+                }
+              }
             >
               <Box
                 component="img"
@@ -65,9 +85,13 @@ const Contact = () => {
               href="https://www.linkedin.com/in/snowboardtechie/"
             >
               <ListItemIcon>
-                <LinkedInIcon sx={{ color: "darkBlue" }} />
+                <LinkedInIcon
+                  sx={{ color: "darkBlue", width: "auto", height: "50%" }}
+                />
               </ListItemIcon>
-              <ListItemText>LinkedIn: Bryan Thompson</ListItemText>
+              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                LinkedIn: Bryan Thompson
+              </ListItemText>
             </ListItem>
             <ListItem
               component="a"
@@ -75,16 +99,22 @@ const Contact = () => {
               href="https://bryan.thompson.codes"
             >
               <ListItemIcon>
-                <CoPresentIcon sx={{ color: "purple" }} />
+                <CoPresentIcon
+                  sx={{ color: "purple", width: "auto", height: "50%" }}
+                />
               </ListItemIcon>
-              <ListItemText>Bryan.Thompson.Codes</ListItemText>
+              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                Bryan.Thompson.Codes
+              </ListItemText>
             </ListItem>
           </List>
           <List
             sx={{
               display: "flex",
-              flexDirection: "column",
+              flexDirection: { xs: "row", md: "column" },
               alignItems: "center",
+              width: { xs: "100%", md: "25%" },
+              gap: { xs: "10px" },
             }}
           >
             <ListItem
@@ -109,9 +139,13 @@ const Contact = () => {
               href="https://www.linkedin.com/in/tracihthompson/"
             >
               <ListItemIcon>
-                <LinkedInIcon sx={{ color: "darkBlue" }} />
+                <LinkedInIcon
+                  sx={{ color: "darkBlue", width: "auto", height: "50%" }}
+                />
               </ListItemIcon>
-              <ListItemText>LinkedIn: Traci Thompson</ListItemText>
+              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                LinkedIn: Traci Thompson
+              </ListItemText>
             </ListItem>
             <ListItem
               component="a"
@@ -119,9 +153,13 @@ const Contact = () => {
               href="https://traci.thompson.codes"
             >
               <ListItemIcon>
-                <CoPresentIcon sx={{ color: "purple" }} />
+                <CoPresentIcon
+                  sx={{ color: "purple", width: "auto", height: "50%" }}
+                />
               </ListItemIcon>
-              <ListItemText>Traci.Thompson.Codes</ListItemText>
+              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                Traci.Thompson.Codes
+              </ListItemText>
             </ListItem>
           </List>
         </Box>

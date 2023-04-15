@@ -7,11 +7,14 @@ export const Menu = ({ setDisplay }) => {
       <Typography
         variant="h1"
         sx={{
+          marginTop: {
+            xs: "20%",
+          },
           marginRight: {
             xs: "auto",
           },
           fontSize: {
-            xs: "70px",
+            xs: "60px",
             sm: "90px",
           },
         }}
