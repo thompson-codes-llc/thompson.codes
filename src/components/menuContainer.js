@@ -24,7 +24,7 @@ export const MenuContainer = () => {
           minWidth: "30%",
           width: { lg: "100%" },
           transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
-          marginLeft: { xs: "20%", sm: "15%", md: "20%", lg: "15%" },
+          marginLeft: { xs: "20%", sm: "15%", md: "20%", lg: "25%" },
           marginTop: {
             xs: "20%",
             sm: "40%",

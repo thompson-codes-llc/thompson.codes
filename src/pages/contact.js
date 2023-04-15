@@ -24,16 +24,18 @@ const Contact = ({ setDisplay }) => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          marginTop: { lg: "5%" },
         }}
       >
         <Button
           onClick={() => setDisplay("menu")}
           sx={{
-            position: { xs: "relative", lg: "fixed" },
+            position: { xs: "relative", lg: "" },
             fontWeight: "400",
             fontSize: "40px",
             color: "black",
             alignSelf: "end",
+            right: { lg: "-50%" },
           }}
         >
           X
@@ -43,14 +45,19 @@ const Contact = ({ setDisplay }) => {
           sx={{
             color: "black",
             alignSelf: "center",
-            // marginLeft: "-25%",
             fontSize: { xs: "30px" },
+            marginRight: { lg: "40%" },
           }}
         >
           Find Us
         </Typography>
         <Box
-          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            gap: { lg: "150px" },
+            marginRight: { lg: "20%" },
+          }}
         >
           <List
             sx={{
@@ -61,13 +68,7 @@ const Contact = ({ setDisplay }) => {
               gap: { xs: "10px" },
             }}
           >
-            <ListItem
-              sx={
-                {
-                  // width: "100%",
-                }
-              }
-            >
+            <ListItem>
               <Box
                 component="img"
                 sx={{
