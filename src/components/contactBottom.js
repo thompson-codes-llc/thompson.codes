@@ -18,7 +18,7 @@ export const ContactBottom = () => {
         justifyContent: "center",
         alignItems: "center",
         marginBottom: { xs: "20%" },
-        marginLeft: { xs: "10%", lg: "50%" },
+        marginLeft: { xs: "-50%", lg: "50%" },
         marginTop: { lg: "-10%" },
       }}
     >
