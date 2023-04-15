@@ -11,7 +11,7 @@ export const MenuBottom = () => {
           lg: "-20%",
         },
         marginLeft: {
-          xs: "20%",
+          xs: "15%",
           lg: "30%",
         },
         marginBottom: {
