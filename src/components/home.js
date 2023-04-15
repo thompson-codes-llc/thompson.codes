@@ -43,7 +43,7 @@ export const Home = () => {
             md: "-175px",
             lg: "-195px",
           },
-          top: { xs: "-15%", sm: "-25%", md: "-25%", lg: "-32%" },
+          top: { xs: "-15%", sm: "-25%", md: "-25%", lg: "-50%" },
           transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
         }}
       >
