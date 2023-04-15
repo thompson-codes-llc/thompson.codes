@@ -1,8 +1,11 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { MenuContainer } from "./menuContainer";
+import { BottomContainer } from "./bottomContainer";
 
 export const Home = () => {
+  const [display, setDisplay] = useState("menu");
+
   return (
     <Box
       id="layout-container"
@@ -47,7 +50,7 @@ export const Home = () => {
           transform: { xs: "rotate(-20deg)", sm: "rotate(-20deg)" },
         }}
       >
-        <MenuContainer />
+        <MenuContainer display={display} setDisplay={setDisplay} />
       </Box>
 
       <Box
@@ -61,36 +64,7 @@ export const Home = () => {
           width: "100%",
         }}
       >
-        {/* {display === "home" && (
-          <Typography
-            variant="h1"
-            sx={{
-              color: "white",
-              marginTop: { xs: 0, sm: "-5%", md: "-15%" },
-              marginRight: { xs: "15%", sm: "20%", md: "10%" },
-              fontSize: {
-                xs: "70px",
-                sm: "90px",
-              },
-            }}
-          >
-            Codes
-          </Typography>
-        )}
-        {display === "about" && (
-          <Typography
-            variant="h4"
-            sx={{
-              color: "white",
-              width: "40%",
-              textAlign: "end",
-              marginRight: { lg: "10%" },
-            }}
-          >
-            We aim to provide quality web development services to businesses in
-            Central Oregon
-          </Typography>
-        )} */}
+        <BottomContainer display={display} />
       </Box>
     </Box>
   );

@@ -1,20 +1,15 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { useState } from "react";
 import { Menu } from "./menu";
 import About from "../pages/about";
 import Contact from "../pages/contact";
 
-export const MenuContainer = () => {
-  const [display, setDisplay] = useState("menu");
-
+export const MenuContainer = ({ display, setDisplay }) => {
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: { xs: "column", sm: "row" },
-        // height: "100%",
-        // alignItems: "start",
         justifyContent: "end",
       }}
     >

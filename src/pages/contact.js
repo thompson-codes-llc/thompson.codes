@@ -7,7 +7,6 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-// import MailIcon from "@mui/icons-material/MailOutline";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import traci from "../assets/traci.jpeg";
@@ -24,183 +23,155 @@ const Contact = ({ setDisplay }) => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: { lg: "5%" },
+          marginTop: { lg: "25%" },
+          marginLeft: { lg: "-22%" },
         }}
       >
         <Button
           onClick={() => setDisplay("menu")}
           sx={{
-            position: { xs: "relative", lg: "" },
+            position: { xs: "relative", lg: "relative" },
             fontWeight: "400",
             fontSize: "40px",
             color: "black",
             alignSelf: "end",
-            right: { lg: "-50%" },
+            right: { lg: "-80%" },
+            marginTop: { lg: "-5%" },
           }}
         >
           X
         </Button>
-        <Typography
-          variant="h3"
-          sx={{
-            color: "black",
-            alignSelf: "center",
-            fontSize: { xs: "30px" },
-            marginRight: { lg: "40%" },
-          }}
-        >
-          Find Us
-        </Typography>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            gap: { lg: "150px" },
-            marginRight: { lg: "20%" },
+            marginTop: { lg: "-5%" },
           }}
         >
-          <List
+          <Typography
+            variant="h3"
             sx={{
-              display: "flex",
-              flexDirection: { xs: "row", md: "column" },
-              alignItems: "center",
-              width: { xs: "100%", md: "25%" },
-              gap: { xs: "10px" },
+              color: "black",
+              alignSelf: "center",
+              fontSize: { xs: "30px" },
+              marginLeft: { lg: "25%" },
             }}
           >
-            <ListItem>
-              <Box
-                component="img"
-                sx={{
-                  height: "100px",
-                  borderRadius: "50%",
-                  boxShadow: 2,
-                }}
-                alt="Bryan"
-                src={bryan}
-              />
-            </ListItem>
-            <ListItem
-              component="a"
-              target="_blank"
-              href="https://www.linkedin.com/in/snowboardtechie/"
-            >
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{ color: "darkBlue", width: "auto", height: "50%" }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
-                LinkedIn: Bryan Thompson
-              </ListItemText>
-            </ListItem>
-            <ListItem
-              component="a"
-              target="_blank"
-              href="https://bryan.thompson.codes"
-            >
-              <ListItemIcon>
-                <CoPresentIcon
-                  sx={{ color: "purple", width: "auto", height: "50%" }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
-                Bryan.Thompson.Codes
-              </ListItemText>
-            </ListItem>
-          </List>
-          <List
+            Find Us
+          </Typography>
+          <Box
             sx={{
               display: "flex",
-              flexDirection: { xs: "row", md: "column" },
-              alignItems: "center",
-              width: { xs: "100%", md: "25%" },
-              gap: { xs: "10px" },
+              flexDirection: { xs: "column", md: "row" },
+              gap: { lg: "150px" },
+              marginRight: { lg: "20%" },
             }}
           >
-            <ListItem
+            <List
               sx={{
-                width: "50%",
+                display: "flex",
+                flexDirection: { xs: "row", md: "column" },
+                alignItems: "center",
+                width: { xs: "100%", md: "25%" },
+                gap: { xs: "10px" },
               }}
             >
-              <Box
-                component="img"
+              <ListItem>
+                <Box
+                  component="img"
+                  sx={{
+                    height: "100px",
+                    borderRadius: "50%",
+                    boxShadow: 2,
+                  }}
+                  alt="Bryan"
+                  src={bryan}
+                />
+              </ListItem>
+              <ListItem
+                component="a"
+                target="_blank"
+                href="https://www.linkedin.com/in/snowboardtechie/"
+              >
+                <ListItemIcon>
+                  <LinkedInIcon
+                    sx={{ color: "darkBlue", width: "auto", height: "50%" }}
+                  />
+                </ListItemIcon>
+                <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                  LinkedIn: Bryan Thompson
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                component="a"
+                target="_blank"
+                href="https://bryan.thompson.codes"
+              >
+                <ListItemIcon>
+                  <CoPresentIcon
+                    sx={{ color: "purple", width: "auto", height: "50%" }}
+                  />
+                </ListItemIcon>
+                <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                  Bryan.Thompson.Codes
+                </ListItemText>
+              </ListItem>
+            </List>
+            <List
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "row", md: "column" },
+                alignItems: "center",
+                width: { xs: "100%", md: "25%" },
+                gap: { xs: "10px" },
+              }}
+            >
+              <ListItem
                 sx={{
-                  height: "100px",
-                  borderRadius: "50%",
-                  boxShadow: 2,
+                  width: "50%",
                 }}
-                alt="Traci"
-                src={traci}
-              />
-            </ListItem>
-            <ListItem
-              component="a"
-              target="_blank"
-              href="https://www.linkedin.com/in/tracihthompson/"
-            >
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{ color: "darkBlue", width: "auto", height: "50%" }}
+              >
+                <Box
+                  component="img"
+                  sx={{
+                    height: "100px",
+                    borderRadius: "50%",
+                    boxShadow: 2,
+                  }}
+                  alt="Traci"
+                  src={traci}
                 />
-              </ListItemIcon>
-              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
-                LinkedIn: Traci Thompson
-              </ListItemText>
-            </ListItem>
-            <ListItem
-              component="a"
-              target="_blank"
-              href="https://traci.thompson.codes"
-            >
-              <ListItemIcon>
-                <CoPresentIcon
-                  sx={{ color: "purple", width: "auto", height: "50%" }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
-                Traci.Thompson.Codes
-              </ListItemText>
-            </ListItem>
-          </List>
+              </ListItem>
+              <ListItem
+                component="a"
+                target="_blank"
+                href="https://www.linkedin.com/in/tracihthompson/"
+              >
+                <ListItemIcon>
+                  <LinkedInIcon
+                    sx={{ color: "darkBlue", width: "auto", height: "50%" }}
+                  />
+                </ListItemIcon>
+                <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                  LinkedIn: Traci Thompson
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                component="a"
+                target="_blank"
+                href="https://traci.thompson.codes"
+              >
+                <ListItemIcon>
+                  <CoPresentIcon
+                    sx={{ color: "purple", width: "auto", height: "50%" }}
+                  />
+                </ListItemIcon>
+                <ListItemText sx={{ display: { xs: "none", md: "block" } }}>
+                  Traci.Thompson.Codes
+                </ListItemText>
+              </ListItem>
+            </List>
+          </Box>
         </Box>
       </Box>
-      {/* <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            color: "white",
-            marginTop: "32%",
-          }}
-        >
-          Contact Us
-        </Typography>
-        <List>
-          <ListItem
-            component="a"
-            target="_blank"
-            href="mailto:contact@thompson.codes"
-          >
-            <ListItemIcon>
-              <MailIcon
-                sx={{
-                  color: "white",
-                }}
-              />
-            </ListItemIcon>
-            <ListItemText sx={{ fontSize: "20px", color: "white" }}>
-              contact@thompson.codes
-            </ListItemText>
-          </ListItem>
-        </List>
-      </Box> */}
     </>
   );
 };

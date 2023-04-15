@@ -11,6 +11,7 @@ const About = ({ setDisplay }) => {
           flexDirection: "column",
           justifyContent: "center",
           marginLeft: { lg: "-10%" },
+          marginTop: { lg: "15%" },
         }}
       >
         <Button
