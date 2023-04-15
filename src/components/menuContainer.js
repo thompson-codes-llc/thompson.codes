@@ -26,7 +26,7 @@ export const MenuContainer = () => {
             transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
             fontWeight: "400",
             fontSize: "40px",
-            marginTop: { xs: "20%", md: "35%", lg: "30%" },
+            marginTop: { xs: "20%", md: "35%", lg: "20%" },
             marginRight: { lg: "25%" },
             color: "black",
           }}
@@ -38,13 +38,13 @@ export const MenuContainer = () => {
         id="top-content"
         sx={{
           minWidth: "30%",
-          width: { lg: "70%" },
+          width: { lg: "100%" },
           transform: { xs: "rotate(20deg)", sm: "rotate(20deg)" },
           marginLeft: { xs: "20%", sm: "15%", md: "20%", lg: "15%" },
           marginTop: {
             xs: "10%",
             sm: "40%",
-            lg: "30%",
+            lg: "20%",
           },
         }}
       >

@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <Box
         sx={{
-          width: "100%",
+          width: "50%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
