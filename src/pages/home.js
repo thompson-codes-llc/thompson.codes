@@ -5,12 +5,15 @@ import traci from "../assets/traci.jpeg";
 import bryan from "../assets/bryan.jpeg";
 import { Profile } from "../components/profile";
 
+const color1 = "rgb(31, 43, 3, .8)";
+const color2 = "rgb(165,170,154, .8)";
+
 const Home = () => {
   return (
     <Box alignItems="center" display="flex" flexDirection="column">
       <Card
         sx={{
-          backgroundColor: "rgb(64,83,94, .75)",
+          backgroundColor: color2,
           height: "100%",
           paddingBottom: "2%",
           paddingRight: "10%",
@@ -21,7 +24,7 @@ const Home = () => {
       >
         <Typography
           sx={{
-            color: "rgb(148,97,97)",
+            color: color1,
             fontSize: "72px",
             opacity: 0.9,
           }}
@@ -32,24 +35,28 @@ const Home = () => {
 
       <Card
         sx={{
-          backgroundColor: "rgb(148,97,97, .75)",
+          backgroundColor: color1,
           height: "100%",
           paddingBottom: "20%",
-          paddingLeft: "20%",
           paddingTop: "2%",
           textAlign: "center",
           width: "100%",
         }}
       >
         <Typography
-          sx={{ color: "rgb(64,83,94)", fontSize: "72px", opacity: 0.9 }}
+          sx={{
+            color: color2,
+            fontSize: "72px",
+            marginLeft: "20%",
+            opacity: 0.9,
+          }}
         >
           Codes
         </Typography>
       </Card>
       <Card
         sx={{
-          backgroundColor: "rgb(64,83,94, .75)",
+          backgroundColor: color2,
           height: "100%",
           py: "10%",
           width: "100%",
@@ -62,7 +69,7 @@ const Home = () => {
       </Card>
       <Card
         sx={{
-          backgroundColor: "rgb(148,97,97, .75)",
+          backgroundColor: color1,
           height: "100%",
           py: "10%",
           width: "100%",
