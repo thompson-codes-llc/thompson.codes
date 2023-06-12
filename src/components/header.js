@@ -2,7 +2,8 @@ import { Card, Typography } from "@mui/material";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-export const Header = (color1, color2) => {
+// eslint-disable-next-line react/prop-types
+export const Header = ({ color1, color2 }) => {
   return (
     <>
       <Card
