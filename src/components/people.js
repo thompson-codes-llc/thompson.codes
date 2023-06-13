@@ -6,14 +6,16 @@ import bryan from "../assets/bryan.jpeg";
 import { Profile } from "../components/profile";
 
 export const People = () => {
+  const styles = {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+  };
   return (
-    <Container
-      sx={{
-        alignItems: "center",
-        display: "flex",
-        flexDirection: "row",
-      }}
-    >
+    <Container sx={{ ...styles }}>
       <Profile
         image={bryan}
         name="Bryan"

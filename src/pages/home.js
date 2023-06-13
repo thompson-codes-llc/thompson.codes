@@ -6,45 +6,58 @@ import { Header } from "../components/header";
 import { About } from "../components/about";
 import { People } from "../components/people";
 
-const color1 = "rgb(31, 43, 3, .8)";
-const color2 = "rgb(165,170,154, .8)";
-
 const Home = () => {
+  const cardStyles = {
+    borderRadius: "0px",
+    height: "100%",
+    width: "100%",
+  };
+
+  const colors = {
+    dark: "rgb(31, 43, 3, .8)",
+    light: "rgb(165,170,154, .8)",
+  };
+
   return (
-    <Box alignItems="center" display="flex" flexDirection="column">
-      <Header color1={color1} color2={color2} />
+    <Box
+      alignItems="center"
+      display="flex"
+      flexDirection="column"
+      sx={{
+        minWidth: "300px",
+      }}
+    >
+      <Header colors={colors} />
       <Card
         sx={{
-          backgroundColor: color2,
-          height: "100%",
+          ...cardStyles,
+          backgroundColor: colors.light,
           py: "10%",
-          width: "100%",
         }}
       >
-        <About color={color1} />
+        <About color={colors.dark} />
       </Card>
       <Card
         sx={{
-          backgroundColor: color1,
+          ...cardStyles,
+          backgroundColor: colors.dark,
           py: "5%",
-          width: "100%",
         }}
       >
         <People />
       </Card>
       <Card
         sx={{
-          backgroundColor: color2,
-          height: "100%",
-          paddingY: "10%",
-          width: "100%",
-          textAlign: "center",
+          ...cardStyles,
+          alignItems: "center",
+          backgroundColor: colors.light,
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          paddingY: "10%",
+          textAlign: "center",
         }}
       >
-        <Contact color={color1} />
+        <Contact color={colors.dark} />
       </Card>
     </Box>
   );

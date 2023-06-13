@@ -1,48 +1,51 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { Card, Typography } from "@mui/material";
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 
-export const Header = (color1, color2) => {
+export const Header = ({ colors }) => {
+  const cardStyles = {
+    borderRadius: "0px",
+    textAlign: "center",
+    width: "100%",
+  };
+
+  const bottomCardStyles = {
+    ...cardStyles,
+    backgroundColor: colors.dark,
+    height: "100%",
+    paddingBottom: "15%",
+    paddingTop: "2%",
+  };
+
+  const headerStyles = {
+    fontSize: {
+      xs: "3rem",
+      sm: "4rem",
+      md: "6rem",
+    },
+    opacity: 0.9,
+  };
+
+  const topCardStyles = {
+    ...cardStyles,
+    backgroundColor: colors.light,
+    paddingBottom: "2%",
+    paddingTop: "15%",
+  };
+
   return (
     <>
-      <Card
-        sx={{
-          backgroundColor: color2,
-          height: "100%",
-          paddingBottom: "2%",
-          paddingTop: "20%",
-          textAlign: "center",
-          width: "100%",
-        }}
-      >
+      <Card sx={{ ...topCardStyles }}>
         <Typography
-          sx={{
-            color: color1,
-            opacity: 0.9,
-            paddingRight: "10%",
-          }}
-          variant={"h1"}
+          sx={{ ...headerStyles, color: colors.dark, paddingRight: "10%" }}
         >
           Thompson
         </Typography>
       </Card>
-      <Card
-        sx={{
-          backgroundColor: color1,
-          height: "100%",
-          paddingBottom: "20%",
-          paddingTop: "2%",
-          textAlign: "center",
-          width: "100%",
-        }}
-      >
+      <Card sx={{ ...bottomCardStyles }}>
         <Typography
-          sx={{
-            color: color2,
-            marginLeft: "20%",
-            opacity: 0.9,
-          }}
-          variant="h1"
+          sx={{ ...headerStyles, color: colors.light, marginLeft: "20%" }}
         >
           Codes
         </Typography>
