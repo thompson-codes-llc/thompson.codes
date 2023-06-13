@@ -4,23 +4,18 @@ import { Card, Typography } from "@mui/material";
 import React from "react";
 
 export const Header = ({ colors }) => {
-  const topCardStyles = {
-    backgroundColor: colors.light,
+  const cardStyles = {
     borderRadius: "0px",
-    paddingBottom: "2%",
-    paddingTop: "15%",
     textAlign: "center",
     width: "100%",
   };
 
   const bottomCardStyles = {
+    ...cardStyles,
     backgroundColor: colors.dark,
-    borderRadius: "0px",
     height: "100%",
     paddingBottom: "15%",
     paddingTop: "2%",
-    textAlign: "center",
-    width: "100%",
   };
 
   const headerStyles = {
@@ -30,6 +25,13 @@ export const Header = ({ colors }) => {
       md: "6rem",
     },
     opacity: 0.9,
+  };
+
+  const topCardStyles = {
+    ...cardStyles,
+    backgroundColor: colors.light,
+    paddingBottom: "2%",
+    paddingTop: "15%",
   };
 
   return (
