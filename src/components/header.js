@@ -1,55 +1,50 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Card, Typography } from "@mui/material";
+import { Box, Button, Card, Typography } from "@mui/material";
+import image from "../assets/istock-header.png";
 import React from "react";
 
-export const Header = ({ colors }) => {
-  const cardStyles = {
-    borderRadius: "0px",
-    textAlign: "center",
-    width: "100%",
-  };
-
-  const bottomCardStyles = {
-    ...cardStyles,
-    backgroundColor: colors.dark,
-    height: "100%",
-    paddingBottom: "15%",
-    paddingTop: "2%",
-  };
-
-  const headerStyles = {
-    fontSize: {
-      xs: "3rem",
-      sm: "4rem",
-      md: "6rem",
-    },
-    opacity: 0.9,
-  };
-
-  const topCardStyles = {
-    ...cardStyles,
-    backgroundColor: colors.light,
-    paddingBottom: "2%",
-    paddingTop: "15%",
-  };
-
+export const Header = () => {
   return (
-    <>
-      <Card sx={{ ...topCardStyles }}>
-        <Typography
-          sx={{ ...headerStyles, color: colors.dark, paddingRight: "10%" }}
-        >
-          Thompson
+    <Box display={"flex"} flexDirection={"row"}>
+      <Box display="flex" flexDirection={"column"}>
+        <Typography fontFamily={"Josefin Sans"} fontSize="80px">
+          Your business, made simple
         </Typography>
-      </Card>
-      <Card sx={{ ...bottomCardStyles }}>
-        <Typography
-          sx={{ ...headerStyles, color: colors.light, marginLeft: "20%" }}
-        >
-          Codes
+        <Typography fontFamily={"Lato"} fontSize="40px">
+          Free up your time so that you can focus on what matters most.
         </Typography>
-      </Card>
-    </>
+        <Button
+          sx={{
+            borderRadius: "20px",
+            backgroundColor: "var(--Orange-2, #BB6E36)",
+            width: "426px",
+          }}
+        >
+          <Typography
+            textAlign={"center"}
+            sx={{
+              color: "#FFF",
+              fontSize: "32px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              letterSpacing: "1.28px",
+            }}
+          >
+            Schedule a consultation
+          </Typography>
+        </Button>
+      </Box>
+      <Box
+        component="img"
+        sx={{
+          ml: "auto",
+          mr: "-275px", // trim image instead
+        }}
+        alt="working-remotely"
+        src={image}
+      />
+    </Box>
   );
 };
