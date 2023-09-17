@@ -6,13 +6,22 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <Box display={"flex"} flexDirection={"row"} sx={{}}>
+    <Box
+      display={"flex"}
+      flexDirection={"row"}
+      sx={{
+        backgroundSize: "cover",
+        minHeight: "150%",
+        backgroundImage: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <Box
         display="flex"
         flexDirection={"column"}
         position="absolute"
         sx={{
-          gap: "20px",
+          gap: "30px",
           paddingLeft: "5%",
           top: "525px",
           zIndex: 1,
@@ -66,16 +75,6 @@ export const Header = () => {
           </Typography>
         </Button>
       </Box>
-      <Box
-        component="img"
-        position="absolute"
-        sx={{
-          right: 0,
-          width: "80%",
-        }}
-        alt="working-remotely"
-        src={image}
-      />
     </Box>
   );
 };
