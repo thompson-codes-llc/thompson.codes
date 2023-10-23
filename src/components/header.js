@@ -11,7 +11,7 @@ export const Header = () => {
       flexDirection={"row"}
       sx={{
         backgroundSize: "cover",
-        minHeight: "225%",
+        minHeight: "145%",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
       }}
@@ -58,6 +58,12 @@ export const Header = () => {
             maxWidth: "40%",
             padding: "2%",
             marginTop: "3%",
+            "&:hover": {
+              "*": {
+                color: "var(--Orange-2, #BB6E36)",
+              },
+              backgroundColor: "transparent",
+            },
           }}
         >
           <Typography
