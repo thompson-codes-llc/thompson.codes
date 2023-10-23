@@ -3,6 +3,9 @@
 import { Box, Card, Stack } from "@mui/material";
 import React from "react";
 import { ServiceCard } from "./service_card";
+import bug from "../assets/bug.png";
+import idea from "../assets/idea.png";
+import sync from "../assets/sync.png";
 
 export const Services = () => {
   return (
@@ -18,9 +21,21 @@ export const Services = () => {
       }}
     >
       <Stack direction="row" spacing={10}>
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        <ServiceCard
+          header="Web Development"
+          content="Let’s build your vision from the ground up"
+          icon={idea}
+        />
+        <ServiceCard
+          header="System Administration"
+          content="We’ll keep your business up and running smoothly"
+          icon={sync}
+        />
+        <ServiceCard
+          header="Security"
+          content="Resolving bugs before they become a problem"
+          icon={bug}
+        />
       </Stack>
     </Box>
   );
