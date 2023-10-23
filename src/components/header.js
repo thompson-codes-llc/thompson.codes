@@ -11,7 +11,7 @@ export const Header = () => {
       flexDirection={"row"}
       sx={{
         backgroundSize: "cover",
-        minHeight: "150%",
+        minHeight: "225%",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
       }}
