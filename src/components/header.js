@@ -23,13 +23,13 @@ export const Header = () => {
         sx={{
           gap: "30px",
           paddingLeft: "5%",
-          top: "525px",
+          top: "25%",
           zIndex: 1,
         }}
       >
         <Typography
           fontFamily={"Josefin Sans"}
-          fontSize="300px"
+          fontSize="80px"
           sx={{
             color: "#295073",
             fontStyle: "normal",
@@ -42,7 +42,7 @@ export const Header = () => {
         </Typography>
         <Typography
           fontFamily={"Lato"}
-          fontSize="125px"
+          fontSize="32px"
           sx={{
             color: "#1763A6",
           }}
@@ -52,11 +52,12 @@ export const Header = () => {
         {/* TODO: Set CTA hover state */}
         <Button
           sx={{
-            borderRadius: "30px",
+            borderRadius: "20px",
             backgroundColor: "var(--Orange-2, #BB6E36)",
-            marginTop: "75px",
-            width: "25%",
-            height: "150px",
+            minWidth: "40%",
+            maxWidth: "40%",
+            padding: "2%",
+            marginTop: "3%",
           }}
         >
           <Typography
@@ -64,7 +65,7 @@ export const Header = () => {
             sx={{
               color: "#FFF",
               fontFamily: "Lato",
-              fontSize: "45px",
+              fontSize: "18px",
               fontStyle: "normal",
               fontWeight: 600,
               lineHeight: "normal",
