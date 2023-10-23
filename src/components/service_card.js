@@ -16,7 +16,7 @@ export const ServiceCard = ({ header, content, icon }) => {
     >
       <Stack
         direction="column"
-        spacing={8}
+        spacing={7}
         alignItems="center"
         sx={{
           height: "100%",
@@ -51,7 +51,7 @@ export const ServiceCard = ({ header, content, icon }) => {
         >
           {content}
         </Typography>
-        <img src={icon} height="75px" />
+        <img src={icon} height="100px" />
       </Stack>
     </Card>
   );
