@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import React from "react";
 import { Header } from "../components/header";
 import { Services } from "../components/services";
+import { About } from "../components/about";
+
 const Home = () => {
   return (
     <Box
@@ -16,6 +18,7 @@ const Home = () => {
     >
       <Header />
       <Services />
+      <About />
     </Box>
   );
 };
