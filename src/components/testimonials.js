@@ -1,6 +1,8 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import { Box, Card, MobileStepper, Stack, Typography } from "@mui/material";
 
-export const Testimonials = () => {
+const Testimonials = () => {
   return (
     <Box
       sx={{
@@ -46,9 +48,18 @@ export const Testimonials = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.”
           </Typography>
           {/* TODO: Increase dot size */}
-          <MobileStepper steps={3} activeStep={1} position="static" sx={{}} />
+          <MobileStepper
+            steps={3}
+            activeStep={0}
+            position="static"
+            sx={{}}
+            backButton={undefined}
+            nextButton={undefined}
+          />
         </Stack>
       </Card>
     </Box>
   );
 };
+
+export default Testimonials;

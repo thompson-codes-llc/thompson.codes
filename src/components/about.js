@@ -1,7 +1,9 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import { Box, Card, Typography, Stack } from "@mui/material";
 import image from "../assets/men-with-dog.png";
 
-export const About = () => {
+const About = () => {
   return (
     <Box
       sx={{
@@ -10,18 +12,11 @@ export const About = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-end",
-        // width: "100%",
-        // backgroundSize: "cover",
-        // backgroundImage: `url(${image})`,
-        // backgroundRepeat: "no-repeat",
         backgroundPosition: "center left",
-        // minHeight: "100%",
         backgroundSize: "cover",
-        // backgroundSize: "auto 100%",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
         minHeight: "100%",
-        // minWidth: "100%",
       }}
     >
       <Card
@@ -80,3 +75,5 @@ export const About = () => {
     </Box>
   );
 };
+
+export default About;

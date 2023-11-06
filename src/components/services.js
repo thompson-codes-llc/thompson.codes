@@ -7,7 +7,7 @@ import bug from "../assets/bug.png";
 import idea from "../assets/idea.png";
 import sync from "../assets/sync.png";
 
-export const Services = () => {
+const Services = () => {
   return (
     <Box
       sx={{
@@ -40,3 +40,5 @@ export const Services = () => {
     </Box>
   );
 };
+
+export default Services;

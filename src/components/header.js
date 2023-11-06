@@ -4,7 +4,7 @@ import { Box, Button, Card, Typography } from "@mui/material";
 import image from "../assets/beach_background.jpg";
 import React from "react";
 
-export const Header = () => {
+const Header = () => {
   return (
     <Box
       display={"flex"}
@@ -86,3 +86,5 @@ export const Header = () => {
     </Box>
   );
 };
+
+export default Header;
