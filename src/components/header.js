@@ -13,8 +13,7 @@ export const Header = () => {
         backgroundSize: "cover",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center top",
-        minHeight: "100%",
+        minHeight: "150%",
       }}
     >
       <Box

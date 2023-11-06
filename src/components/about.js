@@ -14,7 +14,7 @@ export const About = () => {
         backgroundSize: "cover",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center top",
+        backgroundPosition: "center left",
         minHeight: "100%",
       }}
     >
