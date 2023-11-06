@@ -1,5 +1,6 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
+import image from "../assets/woman-dock.png";
 
 export const Footer = () => {
   const [message, setMessage] = useState("");
@@ -35,9 +36,11 @@ export const Footer = () => {
   return (
     <Box
       sx={{
-        background:
-          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,123,255,0.5) 50%, rgba(255,255,255,1) 100%)",
-        minHeight: "700px",
+        height: "100%",
+        backgroundSize: "cover",
+        backgroundImage: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        minHeight: "100%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
