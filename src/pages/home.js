@@ -17,7 +17,9 @@ const Home = () => {
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        width: "100%",
+        // width: "200vh",
+        // width: "auto",
+        minWidth: "fit-content",
       }}
     >
       <Header />
