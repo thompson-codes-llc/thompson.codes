@@ -8,14 +8,20 @@ export const About = () => {
         background:
           "linear-gradient(180deg, #FCFCFC 0.1%, rgb(237,243,247, 0.75) 10.77%, rgb(187,212,226, 0.75) 40%, rgb(187,212,226, 0.75) 60%, rgb(237,243,247, 0.75) 90.94%, #FCFCFC 100%)",
         display: "flex",
-        alignItems: "flex-end",
+        alignItems: "center",
         justifyContent: "flex-end",
-        width: "100%",
+        // width: "100%",
+        // backgroundSize: "cover",
+        // backgroundImage: `url(${image})`,
+        // backgroundRepeat: "no-repeat",
+        backgroundPosition: "center left",
+        // minHeight: "100%",
         backgroundSize: "cover",
+        // backgroundSize: "auto 100%",
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center left",
         minHeight: "100%",
+        // minWidth: "100%",
       }}
     >
       <Card

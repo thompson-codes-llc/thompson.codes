@@ -17,7 +17,7 @@ export const Services = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: "-5px",
+        marginTop: "-50px",
       }}
     >
       <Stack direction="row" spacing={10}>
