@@ -5,6 +5,7 @@ import { Header } from "../components/header";
 import { Services } from "../components/services";
 import { About } from "../components/about";
 import { Testimonials } from "../components/testimonials";
+import { Footer } from "../components/footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Services />
       <About />
       <Testimonials />
+      <Footer />
     </Box>
   );
 };
