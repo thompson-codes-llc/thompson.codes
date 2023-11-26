@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import image from "../assets/woman-dock.png";
 
@@ -43,21 +43,21 @@ export const Footer = () => {
         minHeight: "100%",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        marginTop: "-50px",
+        justifyContent: "flex-end",
       }}
     >
       <Box
         sx={{
-          height: "400px",
-          width: "65%",
-          borderRadius: "16px",
-          boxShadow: "6px 6px 20px 0px rgba(41, 80, 115, 0.46)",
-          backgroundColor: "#FCFCFC",
+          height: "475px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          width: "450px",
+          borderRadius: "16px",
+          boxShadow: "6px 6px 20px 0px rgba(41, 80, 115, 0.46)",
+          backgroundColor: "#FCFCFC",
+          marginRight: "70%",
         }}
       >
         <Typography
@@ -74,23 +74,54 @@ export const Footer = () => {
         >
           Contact Us
         </Typography>
-        <form onSubmit={handleSubmit}>
+        <FormControl
+          onSubmit={handleSubmit}
+          sx={{
+            paddingTop: "25px",
+            minWidth: "80%",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "var(--Medium-Blue, #1763A6)",
+              textAlign: "center",
+              fontFamily: "Josefin Sans",
+              fontSize: "28px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "normal",
+              letterSpacing: "-1.44px",
+              paddingBottom: "15px",
+            }}
+          >
+            What would you like to discuss?
+          </Typography>
           <TextField
             variant="outlined"
             multiline
             rows={4}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            sx={{
+              paddingBottom: "25px",
+            }}
           />
           <Button
             id="emailButton"
             type="submit"
             variant="contained"
             color="primary"
+            onClick={handleSubmit}
+            sx={{
+              width: "40%",
+              display: "flex",
+              justifyContent: "center",
+              margin: "auto",
+            }}
           >
             Email us
           </Button>
-        </form>
+        </FormControl>
       </Box>
     </Box>
   );
