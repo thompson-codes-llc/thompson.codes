@@ -1,26 +1,6 @@
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import image from "../assets/woman-dock.jpg";
-
-const turnCursorToEnvelopeWhenHoveringSubmit = () => {
-  var canvas = document.createElement("canvas");
-  canvas.width = 24;
-  canvas.height = 24;
-  var ctx = canvas.getContext("2d");
-  ctx.beginPath();
-  // Draw envelope body
-  ctx.rect(2, 6, 20, 12);
-  // Draw upper part of envelope
-  ctx.moveTo(2, 7);
-  ctx.lineTo(12, 14);
-  ctx.lineTo(22, 7);
-  // Fill the envelope
-  ctx.fillStyle = "orange";
-  ctx.fill();
-  var dataURL = canvas.toDataURL("image/png");
-  document.getElementById("email-button").style.cursor =
-    "url(" + dataURL + "), auto";
-};
 
 export const Footer = () => {
   const [message, setMessage] = useState("");
@@ -32,10 +12,6 @@ export const Footer = () => {
     )}`;
     window.open(mailtoLink, "_blank");
   };
-
-  useEffect(() => {
-    turnCursorToEnvelopeWhenHoveringSubmit();
-  }, []);
 
   return (
     <Box
