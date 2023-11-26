@@ -56,7 +56,7 @@ const Header = () => {
         </Typography>
         {/* TODO: Set CTA hover state */}
         <Button
-          href="mailto:contact@thompson.codes?subject=Interested%20in%20consultation&body=Hello%20Thompsons%2C%0D%0A%0D%0AI%20am%20interested%20in%20a%20consultation%20for%20my%20business.%20Please%20contact%20me%20using%20the%20information%20listed%20below%20to%20schedule%20a%20time%20to%20meet%20and%20dicuss%20your%20IT%20services.%0D%0A%0D%0AThank%20you%2C%0D%0A%0D%0A"
+          href="#contactUs"
           sx={{
             borderRadius: "20px",
             backgroundColor: "var(--Orange-2, #BB6E36)",

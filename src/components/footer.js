@@ -47,6 +47,7 @@ export const Footer = () => {
       }}
     >
       <Box
+        id="contactUs"
         sx={{
           height: "475px",
           display: "flex",
