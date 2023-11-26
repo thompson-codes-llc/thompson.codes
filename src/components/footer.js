@@ -1,6 +1,6 @@
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import image from "../assets/woman-dock.png";
+import image from "../assets/woman-dock.jpg";
 
 const turnCursorToEnvelopeWhenHoveringSubmit = () => {
   var canvas = document.createElement("canvas");

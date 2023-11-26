@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Box, Button, Typography } from "@mui/material";
-import image from "../assets/beach_background.jpg";
+import image from "../assets/beach-background.jpg";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
