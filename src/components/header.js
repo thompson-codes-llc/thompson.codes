@@ -2,9 +2,29 @@
 /* eslint-disable react/prop-types */
 import { Box, Button, Card, Typography } from "@mui/material";
 import image from "../assets/beach_background.jpg";
-import React from "react";
+import React, { useEffect } from "react";
 
 export const Header = () => {
+  useEffect(() => {
+    var canvas = document.createElement("canvas");
+    canvas.width = 24;
+    canvas.height = 24;
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    // Draw envelope body
+    ctx.rect(2, 6, 20, 12);
+    // Draw upper part of envelope
+    ctx.moveTo(2, 7);
+    ctx.lineTo(12, 14);
+    ctx.lineTo(22, 7);
+    // Fill the envelope
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    var dataURL = canvas.toDataURL("image/png");
+    document.getElementById("emailButton").style.cursor =
+      "url(" + dataURL + "), auto";
+  }, []);
+
   return (
     <Box
       display={"flex"}
@@ -38,7 +58,7 @@ export const Header = () => {
             letterSpacing: "-2.4px",
           }}
         >
-          Your business, made simple
+          Your online business, made simple
         </Typography>
         <Typography
           fontFamily={"Lato"}
@@ -51,6 +71,8 @@ export const Header = () => {
         </Typography>
         {/* TODO: Set CTA hover state */}
         <Button
+          id="emailButton"
+          href="mailto:contact@thompson.codes?subject=Interested%20in%20consultation&body=Hello%20Thompsons%2C%0D%0A%0D%0AI%20am%20interested%20in%20a%20consultation%20for%20my%20business.%20Please%20contact%20me%20using%20the%20information%20listed%20below%20to%20schedule%20a%20time%20to%20meet%20and%20dicuss%20your%20IT%20services.%0D%0A%0D%0AThank%20you%2C%0D%0A%0D%0A"
           sx={{
             borderRadius: "20px",
             backgroundColor: "var(--Orange-2, #BB6E36)",
