@@ -29,7 +29,7 @@ export const Footer = () => {
     ctx.fillStyle = "orange";
     ctx.fill();
     var dataURL = canvas.toDataURL("image/png");
-    document.getElementById("emailButton").style.cursor =
+    document.getElementById("email-button").style.cursor =
       "url(" + dataURL + "), auto";
   }, []);
 
@@ -47,7 +47,7 @@ export const Footer = () => {
       }}
     >
       <Box
-        id="contactUs"
+        id="contact-us"
         sx={{
           height: "475px",
           display: "flex",
@@ -108,7 +108,7 @@ export const Footer = () => {
             }}
           />
           <Button
-            id="emailButton"
+            id="email-button"
             type="submit"
             variant="contained"
             color="primary"

@@ -1,10 +1,30 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Box, Button, Card, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import image from "../assets/beach_background.jpg";
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
+  function scrollToFormAndFocusInput() {
+    var form = document.querySelector("#contact-us");
+    form.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, null, "#contact-us");
+
+    setTimeout(function () {
+      var input = form.querySelector("textarea");
+      if (input) input.focus();
+    }, 500);
+  }
+
+  useEffect(() => {
+    if (location.hash === "#contact-us") {
+      scrollToFormAndFocusInput();
+    }
+  }, [location]);
+
   return (
     <Box
       display={"flex"}
@@ -56,7 +76,7 @@ const Header = () => {
         </Typography>
         {/* TODO: Set CTA hover state */}
         <Button
-          href="#contactUs"
+          onClick={scrollToFormAndFocusInput}
           sx={{
             borderRadius: "20px",
             backgroundColor: "var(--Orange-2, #BB6E36)",
