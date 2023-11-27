@@ -21,7 +21,7 @@ const About = () => {
     >
       <Card
         sx={{
-          width: "375px",
+          width: "425px",
           borderRadius: "16px",
           boxShadow: "6px 6px 20px 0px rgba(41, 80, 115, 0.46)",
           backgroundColor: "#FCFCFC",
@@ -49,7 +49,7 @@ const About = () => {
               letterSpacing: "-1.6px",
             }}
           >
-            More Stuff
+            About Us
           </Typography>
           <Typography
             sx={{
@@ -63,12 +63,17 @@ const About = () => {
               letterSpacing: "-1.44px",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            Thompson Codes is a small business located out of Central Oregon
+            that specializes in a wide variety of web and IT services. Operated
+            by co-owners Bryan and Traci Thompson, combined we have over 20
+            years of experience in the industry. From a wide range of comapanies
+            and industries, startups to fortune 5, working with schools and
+            government.
+            <br />
+            <br />
+            We are excited to offer our services to you and your business.
+            Anything from a simple website to a full blown web application, with
+            mobile offerings. We can help you with your IT needs!
           </Typography>
         </Stack>
       </Card>

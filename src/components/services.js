@@ -33,7 +33,7 @@ const Services = () => {
         />
         <ServiceCard
           header="Security"
-          content="Resolving bugs before they become a problem"
+          content="Squashing bugs before they become a problem"
           icon={bug}
         />
       </Stack>

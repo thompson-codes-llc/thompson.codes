@@ -6,7 +6,7 @@ import {
   Header,
   Footer,
   Services,
-  Testimonials,
+  // Testimonials,
 } from "../components/index";
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
       <Header />
       <Services />
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </Box>
   );
