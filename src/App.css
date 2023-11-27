@@ -19,10 +19,6 @@ body,
   width: 100%;
 }
 
-.footer {
-  width: 100%;
-}
-
 #email-button {
   cursor: url("./assets/envelope-duotone.png"), pointer;
 }

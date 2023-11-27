@@ -2,7 +2,7 @@ import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 import image from "../assets/woman-dock.jpg";
 
-export const Footer = () => {
+export const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
@@ -108,4 +108,4 @@ export const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;

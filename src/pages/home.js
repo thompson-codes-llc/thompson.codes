@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import {
   About,
   Header,
-  Footer,
+  Contact,
   Services,
   // Testimonials,
 } from "../components/index";
@@ -26,7 +26,7 @@ const Home = () => {
       <Services />
       <About />
       {/* <Testimonials /> */}
-      <Footer />
+      <Contact />
     </Box>
   );
 };
