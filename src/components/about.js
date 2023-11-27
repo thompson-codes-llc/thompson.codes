@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Box, Card, Typography, Stack } from "@mui/material";
-import backgroundImage from "../assets/men-with-dog.png";
+import backgroundImage from "../assets/men-with-dog.jpg";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
         justifyContent: "flex-end",
         backgroundPosition: "center left",
         backgroundSize: "cover",
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(to top, white, transparent, white), url(${backgroundImage})`,
         backgroundRepeat: "no-repeat",
         minHeight: "100%",
       }}

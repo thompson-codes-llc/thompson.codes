@@ -18,7 +18,7 @@ export const Contact = () => {
       sx={{
         height: "100%",
         backgroundSize: "cover",
-        backgroundImage: `url(${image})`,
+        backgroundImage: `linear-gradient(to top, white, transparent, white), url(${image})`,
         backgroundRepeat: "no-repeat",
         minHeight: "100%",
         display: "flex",
