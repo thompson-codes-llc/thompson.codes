@@ -1,6 +1,6 @@
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import image from "../assets/woman-dock.jpg";
+import backgroundImage from "../assets/woman-dock.jpg";
 
 export const Contact = () => {
   const [message, setMessage] = useState("");
@@ -18,7 +18,7 @@ export const Contact = () => {
       sx={{
         height: "100%",
         backgroundSize: "cover",
-        backgroundImage: `linear-gradient(to top, white, transparent, white), url(${image})`,
+        backgroundImage: `linear-gradient(to bottom, white, transparent 75%), url(${backgroundImage})`,
         backgroundRepeat: "no-repeat",
         minHeight: "100%",
         display: "flex",
