@@ -1,55 +1,115 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Card, Typography } from "@mui/material";
-import React from "react";
+import { Box, Button, Typography } from "@mui/material";
+import image from "../assets/beach-background.jpg";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-export const Header = ({ colors }) => {
-  const cardStyles = {
-    borderRadius: "0px",
-    textAlign: "center",
-    width: "100%",
-  };
+const Header = () => {
+  const location = useLocation();
 
-  const bottomCardStyles = {
-    ...cardStyles,
-    backgroundColor: colors.dark,
-    height: "100%",
-    paddingBottom: "15%",
-    paddingTop: "2%",
-  };
+  function scrollToFormAndFocusInput() {
+    var form = document.querySelector("#contact-us");
+    form.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, null, "#contact-us");
 
-  const headerStyles = {
-    fontSize: {
-      xs: "3rem",
-      sm: "4rem",
-      md: "6rem",
-    },
-    opacity: 0.9,
-  };
+    setTimeout(function () {
+      var input = form.querySelector("textarea");
+      if (input) input.focus();
+    }, 500);
+  }
 
-  const topCardStyles = {
-    ...cardStyles,
-    backgroundColor: colors.light,
-    paddingBottom: "2%",
-    paddingTop: "15%",
-  };
+  useEffect(() => {
+    if (location.hash === "#contact-us") {
+      scrollToFormAndFocusInput();
+    }
+  }, [location]);
 
   return (
-    <>
-      <Card sx={{ ...topCardStyles }}>
+    <Box
+      display={"flex"}
+      flexDirection={"row"}
+      sx={{
+        backgroundSize: "cover",
+        backgroundImage: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right",
+        minHeight: "150%",
+      }}
+    >
+      <Box
+        display="flex"
+        flexDirection={"column"}
+        sx={{
+          gap: "30px",
+          paddingLeft: "5%",
+          position: "relative",
+          top: "10%",
+          width: { xs: "50%", sm: "100%" },
+          zIndex: 1,
+        }}
+      >
         <Typography
-          sx={{ ...headerStyles, color: colors.dark, paddingRight: "10%" }}
+          fontFamily={"Josefin Sans"}
+          sx={{
+            color: "#295073",
+            fontSize: { xs: "90px", sm: "70px" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal",
+            letterSpacing: "-2.4px",
+            whiteSpace: { xs: "break-spaces", sm: "nowrap" },
+          }}
         >
-          Thompson
+          Your online business, made simple
         </Typography>
-      </Card>
-      <Card sx={{ ...bottomCardStyles }}>
         <Typography
-          sx={{ ...headerStyles, color: colors.light, marginLeft: "20%" }}
+          fontFamily={"Lato"}
+          sx={{
+            color: "#1763A6",
+            fontSize: { xs: "32px", sm: "28px" },
+            display: { xs: "none", sm: "block" },
+            whiteSpace: "nowrap",
+          }}
         >
-          Codes
+          Free up your time so that you can focus on what matters most.
         </Typography>
-      </Card>
-    </>
+        {/* TODO: Set CTA hover state */}
+        <Button
+          onClick={scrollToFormAndFocusInput}
+          sx={{
+            borderRadius: "20px",
+            backgroundColor: "var(--Orange-2, #BB6E36)",
+            minWidth: "40%",
+            marginTop: { xs: "3%", sm: "1%", md: "1%" },
+            "&:hover": {
+              "*": {
+                color: "var(--Orange-2, #BB6E36)",
+              },
+              backgroundColor: "transparent",
+            },
+            maxWidth: { xs: "90%", sm: "55%", lg: "40%" },
+            padding: "2%",
+          }}
+        >
+          <Typography
+            textAlign={"center"}
+            sx={{
+              color: "#FFF",
+              fontFamily: "Lato",
+              fontSize: { xs: "28px", lg: "24px" },
+              fontStyle: "normal",
+              fontWeight: 600,
+              lineHeight: "normal",
+              letterSpacing: "3px",
+            }}
+          >
+            Schedule a consultation
+          </Typography>
+        </Button>
+      </Box>
+    </Box>
   );
 };
+
+export default Header;

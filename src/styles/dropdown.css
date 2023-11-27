@@ -1,8 +1,0 @@
-.dropdown {
-  display: none;
-}
-
-.dropdown-container:hover .dropdown {
-  display: flex;
-  flex-direction: column;
-}
