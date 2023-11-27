@@ -66,7 +66,7 @@ const About = () => {
             Thompson Codes is a small business located out of Central Oregon
             that specializes in a wide variety of web and IT services. Operated
             by co-owners Bryan and Traci Thompson, combined we have over 20
-            years of experience in the industry. From a wide range of comapanies
+            years of experience in the industry. From a wide range of companies
             and industries, startups to fortune 5, working with schools and
             government.
             <br />
