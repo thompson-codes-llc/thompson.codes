@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Box, Button, Typography } from "@mui/material";
-import image from "../assets/beach-background.jpg";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -26,29 +25,8 @@ const Header = () => {
   }, [location]);
 
   return (
-    <Box
-      display={"flex"}
-      flexDirection={"row"}
-      sx={{
-        backgroundSize: "cover",
-        backgroundImage: `url(${image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right",
-        minHeight: "150%",
-      }}
-    >
-      <Box
-        display="flex"
-        flexDirection={"column"}
-        sx={{
-          gap: "30px",
-          paddingLeft: "5%",
-          position: "relative",
-          top: "10%",
-          width: { xs: "50%", sm: "100%" },
-          zIndex: 1,
-        }}
-      >
+    <Box className="header">
+      <Box className="header-content">
         <Typography
           fontFamily={"Josefin Sans"}
           sx={{

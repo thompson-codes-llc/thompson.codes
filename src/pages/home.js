@@ -11,17 +11,7 @@ import {
 
 const Home = () => {
   return (
-    <Box
-      sx={{
-        backgroundColor: "#FCFCFC",
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-        // width: "200vh",
-        // width: "auto",
-        minWidth: "fit-content",
-      }}
-    >
+    <Box className="home">
       <Header />
       <Services />
       <About />
