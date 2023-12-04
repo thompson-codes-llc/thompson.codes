@@ -8,7 +8,7 @@ import {
   Contact,
   Services,
   // Testimonials,
-} from "../components/index";
+} from "../components/home_index";
 
 const Home = () => {
   return (
