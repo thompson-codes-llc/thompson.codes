@@ -1,0 +1,62 @@
+.home {
+  .contact {
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, white, transparent 75%),
+      url("../../../assets/woman-dock.jpg");
+    background-repeat: no-repeat;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #contact-us {
+      height: 475px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 450px;
+      border-radius: 16px;
+      box-shadow: 6px 6px 20px 0px rgba(41, 80, 115, 0.46);
+      background-color: #fcfcfc;
+      margin-right: 60%;
+
+      .contact-form {
+        padding-top: 25px;
+        min-width: 80%;
+
+        .contact-form-input {
+          padding-bottom: 25px;
+        }
+
+        .contact-form-title {
+          color: var(--Medium-Blue, #1763a6);
+          text-align: center;
+          font-family: Josefin Sans;
+          font-size: 28px;
+          line-height: normal;
+          letter-spacing: -1.44px;
+          padding-bottom: 15px;
+        }
+
+        #email-button {
+          width: 40%;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          cursor: url("../../../assets/envelope-duotone.png"), pointer;
+        }
+      }
+
+      .contact-title {
+        font-family: Josefin Sans;
+        font-size: 80px;
+        line-height: normal;
+        letter-spacing: -2.4px;
+        text-align: center;
+        color: #295073;
+      }
+    }
+  }
+}

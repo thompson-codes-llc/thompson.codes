@@ -9,7 +9,3 @@ body,
   margin: 0;
   height: 100%;
 }
-
-#email-button {
-  cursor: url("../assets/envelope-duotone.png"), pointer;
-}
