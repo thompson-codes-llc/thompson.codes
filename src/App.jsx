@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./styles/App.css";
 import Home from "./pages/home";
 import { ThemeProvider, createTheme } from "@mui/material";
 // eslint-disable-next-line no-unused-vars
