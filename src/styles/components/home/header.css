@@ -1,0 +1,142 @@
+.home {
+  .header {
+    background-image: url("../../../assets/beach-background.jpg");
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 150%;
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+
+      .header-cta {
+        border-radius: 20px;
+        background-color: var(--Orange-2, #bb6e36);
+        min-width: 40%;
+        max-width: 90%;
+        padding: 2%;
+        &:hover {
+          * {
+            color: var(--Orange-2, #bb6e36);
+          }
+          background-color: transparent;
+        }
+
+        .header-cta-text {
+          text-align: center;
+          color: #fff;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: normal;
+          letter-spacing: 3px;
+        }
+      }
+
+      .header-subtitle {
+        font-family: "Lato";
+        color: #1763a6;
+        display: block;
+      }
+
+      .header-title {
+        font-family: "Josefin Sans";
+        color: #295073;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -2.4px;
+        white-space: break-spaces;
+      }
+    }
+  }
+}
+
+/* Full Size Devices */
+@media (min-width: 1025px) {
+  .home {
+    .header {
+      .header-content {
+        margin-left: 5%;
+        top: 10%;
+        width: 60%;
+
+        .header-cta {
+          width: 25%;
+          margin-top: 3%;
+        }
+
+        .header-subtitle {
+          font-size: 32px;
+        }
+
+        .header-title {
+          font-size: 90px;
+        }
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .home {
+    .header {
+      .header-content {
+        margin-left: 5%;
+        top: 10%;
+        width: 50%;
+
+        .header-cta {
+          margin-top: 1%;
+        }
+
+        .header-subtitle {
+          font-size: 24px;
+        }
+
+        .header-title {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .home {
+    .header {
+      .header-content {
+        margin-left: 5%;
+        top: 10%;
+        width: 40%;
+
+        .header-cta {
+          margin-top: 1%;
+          width: 45%;
+
+          .header-cta-text {
+            font-size: 16px;
+          }
+        }
+
+        .header-subtitle {
+          width: 50%;
+          font-size: 16px;
+        }
+
+        .header-title {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

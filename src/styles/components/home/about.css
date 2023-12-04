@@ -1,0 +1,56 @@
+.home {
+  .about {
+    background: linear-gradient(
+      180deg,
+      #fcfcfc 0.1%,
+      rgba(237, 243, 247, 0.75) 10.77%,
+      rgba(187, 212, 226, 0.75) 40%,
+      rgba(187, 212, 226, 0.75) 60%,
+      rgba(237, 243, 247, 0.75) 90.94%,
+      #fcfcfc 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: center left;
+    background-size: cover;
+    background-image: linear-gradient(to top, white, transparent, white),
+      url("../../../assets/men-with-dog.jpg");
+    background-repeat: no-repeat;
+    min-height: 100%;
+
+    .about-card {
+      width: 425px;
+      border-radius: 16px;
+      box-shadow: 6px 6px 20px 0px rgba(41, 80, 115, 0.46);
+      background-color: #fcfcfc;
+      margin-right: 10%;
+
+      .about-card-content {
+        direction: column;
+        align-items: center;
+        height: 100%;
+        margin: 15% 5%;
+
+        .about-card-title {
+          color: var(--Dark-Blue, #295073);
+          font-family: Josefin Sans;
+          font-size: 32px;
+          line-height: normal;
+          letter-spacing: -1.6px;
+          margin-bottom: 15%;
+        }
+
+        .about-card-body {
+          color: var(--Medium-Blue, #1763a6);
+          text-align: center;
+          font-family: Josefin Sans;
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: -1.44px;
+        }
+      }
+    }
+  }
+}

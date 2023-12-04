@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-.app {
-  margin: 1rem;
-  font-family: "Lato", "Lucida Grande", sans-serif;
-}
-
 html,
 body,
 #root,
@@ -13,12 +8,4 @@ body,
 #app > div {
   margin: 0;
   height: 100%;
-}
-
-.header {
-  width: 100%;
-}
-
-#email-button {
-  cursor: url("./assets/envelope-duotone.png"), pointer;
 }
