@@ -1,6 +1,6 @@
 .home {
   .header {
-    background-image: url("../../assets/beach-background.jpg");
+    background-image: url("../../../assets/beach-background.jpg");
     display: flex;
     flex-direction: row;
     background-size: cover;

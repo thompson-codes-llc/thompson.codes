@@ -3,7 +3,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/components/header.css";
+import "../../styles/components/home/header.css";
 
 const Header = () => {
   const location = useLocation();

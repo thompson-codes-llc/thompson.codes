@@ -3,9 +3,9 @@
 import { Box, Card, Stack } from "@mui/material";
 import React from "react";
 import { ServiceCard } from "./service_card";
-import bug from "../assets/bug.png";
-import idea from "../assets/idea.png";
-import sync from "../assets/sync.png";
+import bug from "../../assets/bug.png";
+import idea from "../../assets/idea.png";
+import sync from "../../assets/sync.png";
 
 const Services = () => {
   return (

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Box, Card, Typography, Stack } from "@mui/material";
-import backgroundImage from "../assets/men-with-dog.jpg";
+import backgroundImage from "../../assets/men-with-dog.jpg";
 
 const About = () => {
   return (

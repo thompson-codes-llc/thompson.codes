@@ -1,7 +1,7 @@
-import About from "./about";
-import Header from "./header";
-import Contact from "./contact";
-import Services from "./services";
-import Testimonials from "./testimonials";
+import About from "./home/about";
+import Header from "./home/header";
+import Contact from "./home/contact";
+import Services from "./home/services";
+import Testimonials from "./home/testimonials";
 
 export { About, Header, Contact, Services, Testimonials };

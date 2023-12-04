@@ -1,6 +1,6 @@
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import backgroundImage from "../assets/woman-dock.jpg";
+import backgroundImage from "../../assets/woman-dock.jpg";
 
 export const Contact = () => {
   const [message, setMessage] = useState("");
